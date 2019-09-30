@@ -1,0 +1,6 @@
+<h1>Location List</h1>
+<ul>
+    {{ range .Pages }}
+    <li>{{ partial "location.html" . }}</li>
+    {{ end }}
+</ul>

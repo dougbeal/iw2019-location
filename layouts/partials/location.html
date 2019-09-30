@@ -1,0 +1,19 @@
+{{/* -*- engine: go -*- */}}
+{{ with .Params.location }}
+<span class="p-location location h-card">
+    <a href="{{ .url }}">
+        <span class="p-name p-org" >{{ .name }}</span>
+    </a>
+    {{ range .map_urls }}
+    <a href="{{ . }}">map</a>
+    {{ end }}
+    <span class="p-adr h-adr">
+        <span class="p-street-address">{{ .streetaddress }}</span>
+        <span class="p-extended-address">{{ .extendedaddress }}</span>
+        <span class="p-locality">{{ .locality }}</span>,
+        <abbr class="p-region" title="{{ .region }}">{{ .regionabbr }}</abbr>
+    </span>
+    <img src="{{ .map_snapshot }}" alt="Map">
+    
+</span>
+{{ end }}
