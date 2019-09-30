@@ -1,3 +1,8 @@
 {{/* -*- engine: go -*- */}}
 
-{{ partial "location.html" . }}
+{{     range $l := $.Site.Data.location }}
+{{       if eq $l.uuid .uuid }}
+{{         partial "location.html" $l }}
+{{       end }}
+{{     end }}
+

@@ -1,6 +1,7 @@
 <h1>Location List</h1>
 <ul>
-    {{ range .Pages }}
-    <li>{{ partial "location.html" . }}</li>
-    {{ end }}
+    {{     range $l := $.Site.Data.location }}
+    <li>{{         partial "location.html" $l }}</li>
+
+{{     end }}
 </ul>
