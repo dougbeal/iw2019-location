@@ -1,4 +1,4 @@
-{{/* -*- engine: go -*- */}}
+{{ define "main" }}
 
 {{     range $l := $.Site.Data.location }}
 {{       if eq $l.uuid .uuid }}
@@ -6,3 +6,4 @@
 {{       end }}
 {{     end }}
 
+{{ end }}

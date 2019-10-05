@@ -1,3 +1,4 @@
+{{ define "main" }}
 <h1>Location List</h1>
 <ul>
     {{     range $l := $.Site.Data.location }}
@@ -5,3 +6,4 @@
 
 {{     end }}
 </ul>
+{{ end }}
