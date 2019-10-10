@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1>Location List</h1>
+<h1>Locations</h1>
 <ul>
     {{     range $l := $.Site.Data.location }}
     <li>{{         partial "location.html" $l }}</li>
