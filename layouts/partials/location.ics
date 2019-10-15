@@ -1,0 +1,2 @@
+{{/* -*- engine: go -*- */}}
+LOCATION:{{ .name }},{{ .streetaddress }}, {{ .extendedaddress }}, {{ .locality }}, {{ .region }}
